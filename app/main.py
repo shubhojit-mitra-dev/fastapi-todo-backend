@@ -1,8 +1,6 @@
 from fastapi import FastAPI
 from app.core.config import settings
-from app.core.logging import setup_logger
-
-logger = setup_logger(name="app.main")
+from app.core.logging import logger
 
 app = FastAPI(title=settings.app_name)
 
