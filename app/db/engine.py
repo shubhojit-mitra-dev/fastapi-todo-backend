@@ -7,3 +7,6 @@ engine = create_async_engine(
     max_overflow=5,
     pool_pre_ping=True,
 )
+
+async def dispose_engine():
+    await engine.dispose()
